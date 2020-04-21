@@ -61,6 +61,26 @@ export const TableContainer = styled.section`
       text-align: left;
       font-size: 16px;
       line-height: 24px;
+
+      button {
+        background: none;
+        border: 0;
+        color: #969cb3;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        svg {
+          margin-left: 12px;
+        }
+
+        &.active {
+          svg {
+            color: #ff872c;
+            transform: rotate(-180deg);
+          }
+        }
+      }
     }
 
     td {

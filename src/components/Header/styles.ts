@@ -22,6 +22,18 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+        position: relative;
+        padding-bottom: 10px;
+
+        &.active::after {
+          content: '';
+          height: 2px;
+          background: #ff872c;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+        }
 
         & + a {
           margin-left: 32px;
